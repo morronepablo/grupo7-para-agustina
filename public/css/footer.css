@@ -1,0 +1,178 @@
+/*==================================================
+    HACE TU PEDIDO
+==================================================*/
+
+.producto_barra {
+  margin-top: 80px;
+  height: 30px;
+  background-color: var(--beige);
+}
+
+.producto_barra hr {
+  border: 2px solid var(--negro);
+}
+
+.producto_pedido {
+  /* margin-top: 40px; */
+  background-color: var(--beige);
+  height: 40px;
+}
+
+.producto_pedido_icono {
+  width: 25px;
+  height: 25px;
+  background-color: var(--negro);
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.producto_pedido_icono i {
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 5px;
+  color: var(--blanco);
+}
+
+.pedido {
+  background-color: var(--beige);
+}
+
+.pedido .pedido_titulo h2 {
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.pedido .pedido_hora h4 {
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pedido_numero h2 {
+  text-align: center;
+}
+
+.pedido_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+}
+
+
+/* ------ FOOTER ------ */
+footer {
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+  background-color: #e6d3ca;
+}
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: baseline;
+}
+footer h3 {
+  font-size: 15px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+.ul-clients {
+  font-size: 11px;
+}
+.ul-social {
+  display: flex;
+  justify-content: space-between;
+    font-size: 15px;
+}
+.contact-footer {
+  font-size: 15px;
+  height: 0;
+}
+.contact-footer i {
+  margin-right: 5px;
+}
+.copy-footer {
+  text-align: right;
+}
+.copy-footer p {
+  font-size: 10px;
+}
+
+
+/* -------------MEDIA QUERIES------------- */
+/* Tablets */
+@media (min-width: 768px) {
+  /* ------ FOOTER ------ */
+  .container-footer {
+    justify-content: space-around;
+    height: 70px;
+  }
+  footer h3 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+  .ul-clients {
+    font-size: 12px;
+  }
+  .ul-clients li {
+    padding: 3px 0;
+  }
+  .ul-social {
+    padding-top: 6px;
+  }
+  .ul-social li {
+    margin-right: 10px;
+  }
+  .copy-footer p {
+    font-size: 11px;
+  }
+  .contact-footer a {
+    font-size: 20px;
+    margin-right: 15px;
+    /*   font-size: 15px;
+  height: 0; */
+  }
+  .contact-footer #whatsapp {
+    font-size: 18px;
+  }
+}
+
+/* Descktop */
+@media (min-width: 1200px) {
+
+  /* ------ FOOTER ------ */
+  footer h3 {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+  }
+  .ul-clients {
+    font-size: 15px;
+  }
+  .ul-clients li {
+    padding: 3px 0;
+  }
+  .ul-social li {
+    margin-right: 16px;
+  }
+  .contact-footer a {
+    font-size: 20px;
+    margin: 0;
+  }
+  .copy-footer p {
+    font-size: 15px;
+  }
+}
