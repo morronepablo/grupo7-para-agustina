@@ -8,20 +8,10 @@ const usersRouter = require('./routers/usersRouter');
 const app = express();
 
 app.use(express.static('public'));
-// app.use(express.static(path.resolve(__dirname, "./public")));
-// app.use(express.urlencoded());
-
-// app.use('/css', express.static(__dirname + '/public/css'));
-// app.use('/fonts', express.static(__dirname + '/public/fonts'));
-// app.use('/js', express.static(__dirname + '/public/js'));
-// app.use('/img', express.static(__dirname + '/public/img'));
 
 
 //Template ejs
 app.set('views', './views');
-// app.set('views', './views/partials');
-// app.set('views', './views/products');
-// app.set('views', './views/users');
 app.set('view engine', 'ejs');
 
 

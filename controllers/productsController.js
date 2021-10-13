@@ -11,9 +11,13 @@ const productsController = {
     index: (req, res) => {
         // const archivo = path.join(__dirname, '../views/products/productDetail.html');
 
-            res.render('products/productDetail');
+            res.render('./products/productDetail');
 
         // res.sendFile(archivo);
+    },
+    details: (req, res) => {
+        const idProducto = req.params.id;
+        
     }
 }
 

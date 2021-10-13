@@ -6,11 +6,12 @@
   margin-top: 80px;
   height: 30px;
   background-color: var(--beige);
+  border: none;
 }
 
-.producto_barra hr {
+/* .producto_barra hr {
   border: 2px solid var(--negro);
-}
+} */
 
 .producto_pedido {
   /* margin-top: 40px; */
@@ -76,6 +77,7 @@ footer {
   padding: 0 15px;
   background-color: #e6d3ca;
 }
+
 .container-footer {
   display: flex;
   flex-direction: row;
@@ -83,6 +85,7 @@ footer {
   padding-top: 20px;
   align-items: baseline;
 }
+
 footer h3 {
   font-size: 15px;
 }
@@ -90,13 +93,17 @@ footer a {
   text-decoration: none;
   color: black;
 }
+.clients-footer ul, .social-footer ul {
+  list-style: none;
+}
 .ul-clients {
   font-size: 11px;
+  justify-content: start;
 }
 .ul-social {
   display: flex;
   justify-content: space-between;
-    font-size: 15px;
+  font-size: 15px;
 }
 .contact-footer {
   font-size: 15px;
@@ -116,8 +123,9 @@ footer a {
 /* -------------MEDIA QUERIES------------- */
 /* Tablets */
 @media (min-width: 768px) {
-  /* ------ FOOTER ------ */
-  .container-footer {
+
+   /* ------ FOOTER ------ */
+   .container-footer {
     justify-content: space-around;
     height: 70px;
   }

@@ -1,0 +1,25 @@
+main {
+    /* height: 300px; */
+    width: 90%;
+    /* margin: 20px 0; */
+	/* padding: 20px; */
+	height: 1000px;
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+}
+
+.dataProfile {
+    width: 40%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.dataProfile2 {
+    width: 60%;
+    height: 100px;
+    border: 1px solid brown;
+    
+}

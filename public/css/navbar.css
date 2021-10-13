@@ -1,4 +1,4 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -11,20 +11,55 @@ body {
 
 a {
 	text-decoration: none;
+} */
+
+
+/*==================================================
+    Tipografía
+==================================================*/
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: regular;
+    src: url('/fonts/BebasNeue-Regular.ttf');
 }
+
+/*==================================================
+    Estilo Global
+==================================================*/
+
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/*==================================================
+    Estilo del Body
+==================================================*/
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    background-color: #fff;
+}
+
+
+
+
 
 .contenedor {
 	margin: auto;
 	width: 90%;
-	max-height: 100%;
 	max-width: 1200px;
 }
 
 main article {
-	background: #fff;
+	/* background: #fff;
 	margin: 20px 0;
 	padding: 20px;
-	height: 1000px;
+	height: 1000px; */
 }
 
 /* ------------------------- */
@@ -40,14 +75,12 @@ main article {
 	margin-bottom: 20px;
 	width: 100%;
 	position: fixed;
-	z-index: 999;
 	top: 0;
 }
 
-.menu .contenedor {
-	/* margin-top: 30px; */
-	margin-bottom: 0;
-}
+/* .menu .contenedor {
+	margin-top: 30px;
+} */
 
 .menu .contenedor-botones-menu {
 	/* display: flex; */
@@ -81,9 +114,6 @@ main article {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* height: 90px; */
-	/* margin-bottom: 0; */
-	/* margin-top: 36px; */
 }
 
 .menu .btn-departamentos {
@@ -109,8 +139,9 @@ main article {
 
 .menu .btn-departamentos span {
 	display: block;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 .menu .contenedor-enlaces-nav .enlaces a {
@@ -118,7 +149,7 @@ main article {
 	border: 1px solid transparent;
 	padding: 7px;
 	border-radius: 3px;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .menu .contenedor-enlaces-nav .enlaces a:hover {
@@ -175,7 +206,7 @@ main article {
 	padding: 10px;
 	border-radius: 3px;
 	margin: 20px;
-	font-size: 16px;
+	font-size: 18px;
 	cursor: pointer;
 	display: none;
 }
@@ -197,7 +228,7 @@ main article {
 
 .grid .categorias a {
 	color: #000;
-	font-size: 14px;
+	font-size: 18px;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 20px;
@@ -252,7 +283,7 @@ main article {
 .grid .enlaces-subcategoria a {
 	color: #000;
 	display: block;
-	font-size: 14px;
+	font-size: 18px;
 	padding: 10px 20px;
 }
 
@@ -411,15 +442,3 @@ main article {
 	}
 }
 
-/* -------------MEDIA QUERIES------------- */
-
-  /* Descktop */
-  @media (min-width: 1200px) {
-	.menu {
-		height: 90px;
-	}
-	.menu .contenedor-enlaces-nav {
-		margin-top: 36px;
-	}
-	
-  }
